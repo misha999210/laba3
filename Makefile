@@ -6,6 +6,8 @@ OD = build/
 EXECUTABLE = bin/circles.exe
 
 all: build/ bin/ $(EXECUTABLE)
+build/:
+	mkdir build/ -p
 $(EXECUTABLE):	$(OD)main.o $(OD)text.o
 	$(CC) $(CFLAGS) -o $(EXECUTABLE) $(OD)main.o $(OD)text.o
 $(OD)main.o: $(SD)main.c
