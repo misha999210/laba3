@@ -60,7 +60,6 @@ int main()
 
             type();
             puts(f1);
-            printf("%d - X\n%d - Y\n%d - R\n", x, y, r);
             printf("Area = %.4f\n", s);
             printf("Perimeter= %.4f\n", p);
 
